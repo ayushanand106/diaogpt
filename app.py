@@ -20,7 +20,9 @@ def predict():
     text = request.get_json().get("message")
     if text == "hi":
         return jsonify({"answer":"hello, how are you?"})
+    print(text)
     response = get_response(text)
+    print(response)
     message = {"answer": response}
     return jsonify(message)
 
