@@ -31,7 +31,7 @@ def predict():
 if __name__ == '__main__':
     # Get host, port, and debug settings from environment variables or set defaults
     host = os.getenv('FLASK_HOST', '0.0.0.0')
-    port = int(os.getenv('FLASK_PORT', 5000))
+    port = int(os.getenv('PORT', 5000))
     debug = os.getenv('FLASK_DEBUG', 'True').lower() == 'true'
 
     app.run(host=host, debug=debug, port=port)
