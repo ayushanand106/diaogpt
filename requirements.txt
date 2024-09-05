@@ -5,3 +5,4 @@ transformers
 jsonify
 torch
 numpy
+python-dotenv
