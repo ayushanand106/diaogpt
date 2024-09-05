@@ -6,6 +6,7 @@ model = AutoModelForCausalLM.from_pretrained("./fine-tuned-dialoGPT")
 tokenizer = AutoTokenizer.from_pretrained("./fine-tuned-dialoGPT")
 
 def get_response(input_text):
+    print(input_text)
     # Tokenize the input text and append the end-of-sequence token
     input_ids = tokenizer.encode(input_text + tokenizer.eos_token, return_tensors="pt")
 
